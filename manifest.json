@@ -1,0 +1,13 @@
+{
+    "name": "YoutubeMP4",
+    "description": "This extension downloads the desired youtube video.",
+    "version": "1.0",
+    "manifest_version": 3,
+    "content_scripts": [
+        {
+            "matches": ["*://www.youtube.com/*"],
+            "js": ["script.js"],
+            "run_at": "document_end"
+        }
+    ]
+}
